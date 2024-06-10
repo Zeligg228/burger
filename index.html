@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+  <title>Burger</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__block">
+        <div class="header__left">
+          <div class="header__image">
+            <img src="img/logo.png" alt="logo">
+          </div>
+          <ul class="header__links">
+            <li><a href="#discover" class="active">Discover</a></li>
+            <li><a href="#craft">Make your Burger</a></li>
+          </ul>
+        </div>
+        <div class="header__right">
+          <button class="btn header__call">Call Me back</button>
+          <a href="tel:88004378722" class="header__phone">8 800 437-87-22</a>
+        </div>
+        <button class="btn burger__open">
+          <svg width="18" height="12" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 12H6V10H18V12ZM18 7H0V5H18V7ZM18 2H6V0H18V2Z" fill="#2E3A59"/>
+          </svg>            
+        </button>
+        <button class="btn burger__close">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.6568 15.0711L0.928918 2.34315L2.34313 0.928932L15.0711 13.6569L13.6568 15.0711Z" fill="#2E3A59"/>
+            <path d="M15.0711 2.34315L2.34313 15.0711L0.928918 13.6569L13.6568 0.928932L15.0711 2.34315Z" fill="#2E3A59"/>
+          </svg>           
+        </button>
+      </div>
+    </div>
+    <div class="burger">
+      <div class="header__right">
+        <button class="btn header__call">Call Me back</button>
+        <a href="tel:88004378722" class="header__phone">8 800 437-87-22</a>
+      </div>
+      <ul class="header__links">
+        <li><a href="#discover" class="active">Discover</a></li>
+        <li><a href="#craft">Make your Burger</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="discover" id="discover">
+      <div class="container">
+        <div class="discover__block">
+          <div class="discover__left">
+            <h2 class="discover__title section__title">Make Your Burger</h2>
+            <p class="discover__subtitle">Parallax screen. Burger ingredients and emojis moving depending on the position of the mouse pointer.</p>
+          </div>
+          <div class="discover__right">
+            <div class="discover__image">
+              <img src="img/discover-burger.png" alt="burger" class="discover__image-item mobile">
+              <img src="img/burger-top.png" alt="burger-top" class="discover__image-item discover__burger-top">
+              <img src="img/mayo-big.png" alt="mayo" class="discover__image-item discover__mayo-1" data-speed="0.5">
+              <img src="img/salad-big.png" alt="salad" class="discover__image-item discover__salad-1" data-speed="0.3">
+              <img src="img/cucumber-big.png" alt="cucumber" class="discover__image-item discover__cucumber" data-speed="-0.2">
+              <img src="img/tomato-big.png" alt="tomato" class="discover__image-item discover__tomato" data-speed="-0.4">
+              <img src="img/cutlet-big.png" alt="cutlet" class="discover__image-item discover__cutlet" data-speed="0.6">
+              <img src="img/onion-big.png" alt="onion" class="discover__image-item discover__onion" data-speed="0.4">
+              <img src="img/cheese-big.png" alt="cheese" class="discover__image-item discover__cheese" data-speed="-0.5">
+              <img src="img/salad-big.png" alt="salad" class="discover__image-item discover__salad-2" data-speed="-0.3">
+              <img src="img/mayo-big.png" alt="mayo" class="discover__image-item discover__mayo-2" data-speed="0.2">
+              <img src="img/burger-bottom.png" alt="burger-bottom" class="discover__image-item discover__burger-bottom">
+            </div>
+            <a href="#craft" class="discover__craft">make burger</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="craft" id="craft">
+      <div class="container">
+        <div class="craft__block">
+          <div class="craft__left">
+            <h2 class="craft__title section__title">Make Your Burger</h2>
+          </div>
+          <div class="craft__burger">
+            <div class="craft__burger-parts">
+              <img src="img/cutlet-big.png" alt="cutlet" class="craft__burger-parts__image" data-ingredient="cutlet">
+              <img src="img/mayo-big.png" alt="mayo" class="craft__burger-parts__image" data-ingredient="mayo">
+              <img src="img/onion-big.png" alt="onion" class="craft__burger-parts__image" data-ingredient="onion">
+              <img src="img/tomato-big.png" alt="tomato" class="craft__burger-parts__image" data-ingredient="tomato">
+              <img src="img/cucumber-big.png" alt="cucumber" class="craft__burger-parts__image" data-ingredient="cucumber">
+              <img src="img/cheese-big.png" alt="cheese" class="craft__burger-parts__image" data-ingredient="cheese">
+              <img src="img/salad-big.png" alt="salad" class="craft__burger-parts__image" data-ingredient="salad">
+              <img src="img/bun-big.png" alt="bun" class="craft__burger-parts__image" data-ingredient="bun">
+              <img src="img/burger-top.png" alt="burger-top" class="craft__burger-parts__image" data-ingredient="burger-top">
+            </div>
+            <div class="craft__burger-image">
+              <img src="img/craft-burger.png" alt="burger">
+            </div>
+            <div class="craft__burger-excessive">
+              <img src="img/excessive-emoji.svg" alt="excessive-emoji">
+              <p>are you sure?</p>
+            </div>
+          </div>
+          <div class="craft__summary">
+            <h2 class="craft__summary-title">Summary</h2>
+            <div class="craft__summary-block">
+              <div class="craft__summary-item" id="summary-kcal">
+                <img src="img/kcal-icon.svg" alt="kcal-icon">
+                <span>0</span>
+                <h5>kcal</h5>
+              </div>
+              <div class="craft__summary-item" id="summary-time">
+                <img src="img/time-icon.svg" alt="time-icon">
+                <span>0</span>
+                <h5>min</h5>
+              </div>
+              <div class="craft__summary-item" id="summary-weight">
+                <img src="img/weight-icon.svg" alt="weight-icon">
+                <span>0</span>
+                <h5>g</h5>
+              </div>
+            </div>
+            <div class="craft__summary-bottom">
+              <div class="craft__summary-price"><span>$0.00</span></div>
+              <p class="craft__summary-gift">Build a <span>$5</span> Burger and Get a Gift</p>
+              <div class="craft__summary-ketchup">
+                <h2>+ Gift</h2>
+                <p>Tomato Ketchup<span>0.2 oz</span></p>
+                <img src="img/ketchup.png" alt="ketchup">
+              </div>
+            </div>
+          </div>
+          <button class="btn craft__order mobile disabled">Order</button>
+        </div>
+        <button class="btn craft__order disabled">Order</button>
+        <div class="craft__ingredients-wrapper">
+          <div class="craft__ingredients">
+            <div class="craft__ingredients-item__wrapper">
+              <div class="craft__ingredients-item" data-cost="2" data-ingredient="cutlet">
+                <div class="craft__ingredients-image"><img src="img/cutlet-small.png" alt="cutlet"></div>
+                <h3 class="craft__ingredients-title">Cutlet</h3>
+                <div class="craft__ingredients-stats">
+                  <div class="craft__ingredients-stats__item">
+                    <img src="img/kcal-icon.svg" alt="kcal-icon">
+                    <span>12</span>
+                    <h5>kcal</h5>
+                  </div>
+                  <div class="craft__ingredients-stats__item">
+                    <img src="img/time-icon.svg" alt="time-icon">
+                    <span>6</span>
+                    <h5>sec</h5>
+                  </div>
+                  <div class="craft__ingredients-stats__item">
+                    <img src="img/weight-icon.svg" alt="weight-icon">
+                    <span>7</span>
+                    <h5>g</h5>
+                  </div>
+                </div>
+                <div class="craft__ingredients-count">
+                  <button class="btn craft__ingredients-minus"><img src="img/minus-icon.svg" alt="minus-icon"></button>
+                  <span class="craft__ingredients-current">0</span>
+                  <button class="btn craft__ingredients-plus"><img src="img/plus-icon.svg" alt="plus-icon"></button>
+                </div>
+              </div>
+            </div>
+            <div class="craft__ingredients-item__wrapper">
+              <div class="craft__ingredients-item" data-cost="0.2" data-ingredient="mayo">
+                <div class="craft__ingredients-image"><img src="img/mayo-small.png" alt="mayo"></div>
+                <h3 class="craft__ingredients-title">Mayo</h3>
+                <div class="craft__ingredients-stats">
+                  <div class="craft__ingredients-stats__item">
+                    <img src="img/kcal-icon.svg" alt="kcal-icon">
+                    <span>12</span>
+                    <h5>kcal</h5>
+                  </div>
+                  <div class="craft__ingredients-stats__item">
+                    <img src="img/time-icon.svg" alt="time-icon">
+                    <span>6</span>
+                    <h5>sec</h5>
+                  </div>
+                  <div class="craft__ingredients-stats__item">
+                    <img src="img/weight-icon.svg" alt="weight-icon">
+                    <span>7</span>
+                    <h5>g</h5>
+                  </div>
+                </div>
+                <div class="craft__ingredients-count">
+                  <button class="btn craft__ingredients-minus"><img src="img/minus-icon.svg" alt="minus-icon"></button>
+                  <span class="craft__ingredients-current">0</span>
+                  <button class="btn craft__ingredients-plus"><img src="img/plus-icon.svg" alt="plus-icon"></button>
+                </div>
+              </div>
+            </div>
+            <div class="craft__ingredients-item__wrapper">
+              <div class="craft__ingredients-item" data-cost="0.2" data-ingredient="onion">
+                <div class="craft__ingredients-image"><img src="img/onion-small.png" alt="onion"></div>
+                <h3 class="craft__ingredients-title">Onion</h3>
+                <div class="craft__ingredients-stats">
+                  <div class="craft__ingredients-stats__item">
+                    <img src="img/kcal-icon.svg" alt="kcal-icon">
+                    <span>12</span>
+                    <h5>kcal</h5>
+                  </div>
+                  <div class="craft__ingredients-stats__item">
+                    <img src="img/time-icon.svg" alt="time-icon">
+                    <span>6</span>
+                    <h5>sec</h5>
+                  </div>
+                  <div class="craft__ingredients-stats__item">
+                    <img src="img/weight-icon.svg" alt="weight-icon">
+                    <span>7</span>
+                    <h5>g</h5>
+                  </div>
+                </div>
+                <div class="craft__ingredients-count">
+                  <button class="btn craft__ingredients-minus"><img src="img/minus-icon.svg" alt="minus-icon"></button>
+                  <span class="craft__ingredients-current">0</span>
+                  <button class="btn craft__ingredients-plus"><img src="img/plus-icon.svg" alt="plus-icon"></button>
+                </div>
+              </div>
+            </div>
+            <div class="craft__ingredients-item__wrapper">
+              <div class="craft__ingredients-item" data-cost="0.2" data-ingredient="tomato">
+                <div class="craft__ingredients-image"><img src="img/tomato-small.png" alt="tomato"></div>
+                <h3 class="craft__ingredients-title">Tomato</h3>
+                <div class="craft__ingredients-stats">
+                  <div class="craft__ingredients-stats__item">
+                    <img src="img/kcal-icon.svg" alt="kcal-icon">
+                    <span>12</span>
+                    <h5>kcal</h5>
+                  </div>
+                  <div class="craft__ingredients-stats__item">
+                    <img src="img/time-icon.svg" alt="time-icon">
+                    <span>6</span>
+                    <h5>sec</h5>
+                  </div>
+                  <div class="craft__ingredients-stats__item">
+                    <img src="img/weight-icon.svg" alt="weight-icon">
+                    <span>7</span>
+                    <h5>g</h5>
+                  </div>
+                </div>
+                <div class="craft__ingredients-count">
+                  <button class="btn craft__ingredients-minus"><img src="img/minus-icon.svg" alt="minus-icon"></button>
+                  <span class="craft__ingredients-current">0</span>
+                  <button class="btn craft__ingredients-plus"><img src="img/plus-icon.svg" alt="plus-icon"></button>
+                </div>
+              </div>
+            </div>
+            <div class="craft__ingredients-item__wrapper">
+              <div class="craft__ingredients-item" data-cost="0.2" data-ingredient="cucumber">
+                <div class="craft__ingredients-image"><img src="img/cucumber-small.png" alt="cucumber"></div>
+                <h3 class="craft__ingredients-title">Cucumber</h3>
+                <div class="craft__ingredients-stats">
+                  <div class="craft__ingredients-stats__item">
+                    <img src="img/kcal-icon.svg" alt="kcal-icon">
+                    <span>8</span>
+                    <h5>kcal</h5>
+                  </div>
+                  <div class="craft__ingredients-stats__item">
+                    <img src="img/time-icon.svg" alt="time-icon">
+                    <span>5</span>
+                    <h5>sec</h5>
+                  </div>
+                  <div class="craft__ingredients-stats__item">
+                    <img src="img/weight-icon.svg" alt="weight-icon">
+                    <span>4</span>
+                    <h5>g</h5>
+                  </div>
+                </div>
+                <div class="craft__ingredients-count">
+                  <button class="btn craft__ingredients-minus"><img src="img/minus-icon.svg" alt="minus-icon"></button>
+                  <span class="craft__ingredients-current">0</span>
+                  <button class="btn craft__ingredients-plus"><img src="img/plus-icon.svg" alt="plus-icon"></button>
+                </div>
+              </div>
+            </div>
+            <div class="craft__ingredients-item__wrapper">
+              <div class="craft__ingredients-item" data-cost="1" data-ingredient="cheese">
+                <div class="craft__ingredients-image"><img src="img/cheese-small.png" alt="cheese"></div>
+                <h3 class="craft__ingredients-title">Cheese</h3>
+                <div class="craft__ingredients-stats">
+                  <div class="craft__ingredients-stats__item">
+                    <img src="img/kcal-icon.svg" alt="kcal-icon">
+                    <span>8</span>
+                    <h5>kcal</h5>
+                  </div>
+                  <div class="craft__ingredients-stats__item">
+                    <img src="img/time-icon.svg" alt="time-icon">
+                    <span>5</span>
+                    <h5>sec</h5>
+                  </div>
+                  <div class="craft__ingredients-stats__item">
+                    <img src="img/weight-icon.svg" alt="weight-icon">
+                    <span>4</span>
+                    <h5>g</h5>
+                  </div>
+                </div>
+                <div class="craft__ingredients-count">
+                  <button class="btn craft__ingredients-minus"><img src="img/minus-icon.svg" alt="minus-icon"></button>
+                  <span class="craft__ingredients-current">0</span>
+                  <button class="btn craft__ingredients-plus"><img src="img/plus-icon.svg" alt="plus-icon"></button>
+                </div>
+              </div>
+            </div>
+            <div class="craft__ingredients-item__wrapper">
+              <div class="craft__ingredients-item" data-cost="1" data-ingredient="salad">
+                <div class="craft__ingredients-image"><img src="img/salad-small.png" alt="salad"></div>
+                <h3 class="craft__ingredients-title">Salad</h3>
+                <div class="craft__ingredients-stats">
+                  <div class="craft__ingredients-stats__item">
+                    <img src="img/kcal-icon.svg" alt="kcal-icon">
+                    <span>8</span>
+                    <h5>kcal</h5>
+                  </div>
+                  <div class="craft__ingredients-stats__item">
+                    <img src="img/time-icon.svg" alt="time-icon">
+                    <span>5</span>
+                    <h5>sec</h5>
+                  </div>
+                  <div class="craft__ingredients-stats__item">
+                    <img src="img/weight-icon.svg" alt="weight-icon">
+                    <span>4</span>
+                    <h5>g</h5>
+                  </div>
+                </div>
+                <div class="craft__ingredients-count">
+                  <button class="btn craft__ingredients-minus"><img src="img/minus-icon.svg" alt="minus-icon"></button>
+                  <span class="craft__ingredients-current">0</span>
+                  <button class="btn craft__ingredients-plus"><img src="img/plus-icon.svg" alt="plus-icon"></button>
+                </div>
+              </div>
+            </div>
+            <div class="craft__ingredients-item__wrapper">
+              <div class="craft__ingredients-item" data-cost="1" data-ingredient="bun">
+                <div class="craft__ingredients-image"><img src="img/bun-small.png" alt="bun"></div>
+                <h3 class="craft__ingredients-title">Bun</h3>
+                <div class="craft__ingredients-stats">
+                  <div class="craft__ingredients-stats__item">
+                    <img src="img/kcal-icon.svg" alt="kcal-icon">
+                    <span>8</span>
+                    <h5>kcal</h5>
+                  </div>
+                  <div class="craft__ingredients-stats__item">
+                    <img src="img/time-icon.svg" alt="time-icon">
+                    <span>5</span>
+                    <h5>sec</h5>
+                  </div>
+                  <div class="craft__ingredients-stats__item">
+                    <img src="img/weight-icon.svg" alt="weight-icon">
+                    <span>4</span>
+                    <h5>g</h5>
+                  </div>
+                </div>
+                <div class="craft__ingredients-count">
+                  <button class="btn craft__ingredients-minus"><img src="img/minus-icon.svg" alt="minus-icon"></button>
+                  <span class="craft__ingredients-current">0</span>
+                  <button class="btn craft__ingredients-plus"><img src="img/plus-icon.svg" alt="plus-icon"></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="modal" id="modal-email">
+    <div class="modal__container">
+      <div class="modal__block">
+        <button class="btn modal__close"><img src="img/close.svg" alt="cross"></button>
+        <div class="modal__bg"><img src="img/modal-bg.png" alt="burger"></div>
+        <div class="modal__main">
+          <h2 class="modal__main-title">The order has been accepted and is already being prepared. Thank you.</h2>
+          <form action="#" class="modal__main-form">
+            <input type="email" placeholder="Enter email" id="email" required>
+            <button type="submit" class="btn">Ok</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal-phone">
+    <div class="modal__container">
+      <div class="modal__block">
+        <button class="btn modal__close"><img src="img/close.svg" alt="cross"></button>
+        <div class="modal__bg"><img src="img/modal-bg.png" alt="burger"></div>
+        <div class="modal__main">
+          <h2 class="modal__main-title">Enter your phone and wait the a call from us.</h2>
+          <form action="#" class="modal__main-form">
+            <input type="tel" placeholder="+38 (0____) __________" id="phone" required>
+            <button type="submit" class="btn">Ok</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal-success">
+    <div class="modal__container">
+      <div class="modal__block">
+        <button class="btn modal__close"><img src="img/close.svg" alt="cross"></button>
+        <div class="modal__bg"><img src="img/modal-bg-success.png" alt="burger"></div>
+        <div class="modal__main">
+          <h2 class="modal__main-title">The order has been accepted and is already being prepared. Thank you.</h2>
+          <button class="btn">Ok</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/imask"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

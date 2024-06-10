@@ -1,0 +1,49 @@
+*
+  box-sizing: border-box
+html
+  scroll-behavior: smooth
+body
+  +TTNormsPro-Regular
+  cursor: default
+  &::-webkit-scrollbar 
+    width: 6px
+  &::-webkit-scrollbar-track 
+    background: #000
+  &::-webkit-scrollbar-thumb 
+    background-color: #5243C2
+.container
+  max-width: 1540px
+  margin: 0px auto
+  padding: 0px 30px
+a
+  text-decoration: none
+h1, h2, h3, h4, h5, h6 
+  margin-top: 0
+  font-weight: inherit
+main 
+  overflow: hidden
+.btn
+  border: none
+  outline: none
+  cursor: pointer
+.section__title
+  color: #1f2939
+  +TTNormsPro-Medium
+  font-size: 72px
+  line-height: 80.5px
+.modal-open 
+  -webkit-overflow-scrolling: touch
+  touch-action: none
+  -ms-touch-action: none
+  overflow: hidden
+@media (max-width: 1440px )
+  .section__title
+    font-size: 56px
+    line-height: 62px
+@media (max-width: 992px )
+  .section__title
+    font-size: 48px
+    line-height: 54px
+@media (max-width: 768px )
+  .container
+    padding: 0px 20px

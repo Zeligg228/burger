@@ -1,0 +1,168 @@
+.modal 
+  display: none
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  overflow-y: auto
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 9999
+  &::-webkit-scrollbar
+    display: none
+  &__container 
+    flex-shrink: 0
+    flex-grow: 0
+    width: 100%
+    min-height: 100%
+    margin: auto
+    padding: 0px 45px
+    display: flex
+    flex-flow: column nowrap
+    align-items: center
+    justify-content: center
+  &__block
+    max-width: 1200px
+    background: #fff
+    border-radius: 50px
+    padding: 45px 40px 60px
+    position: relative
+    margin: 30px auto
+    width: 100%
+    border: 5px solid #f5f5ff
+  &__close
+    position: absolute
+    padding: 0
+    top: 40px
+    right: 40px
+    background-color: transparent
+    z-index: 2
+    & > img
+      display: block
+  &__bg
+    margin: 0px auto
+    width: fit-content
+    max-width: 631px
+    & > img
+      display: block
+      width: 100%
+  &__main
+    width: 100%
+    max-width: 1100px
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    padding: 0px 20px
+    &-title 
+      color: #1f2939
+      +TTNormsPro-Medium
+      font-size: 72px
+      line-height: normal
+      text-align: center
+      margin-bottom: 60px
+    &-form
+      display: flex
+      align-items: center
+      justify-content: center
+      column-gap: 67px
+      margin: 0px auto
+      & > input 
+        border-radius: 99px
+        background: #ffeded
+        color: #ff4d4f
+        +TTNormsPro-Medium
+        font-size: 16px
+        line-height: 19px
+        border: none
+        outline: none
+        padding: 20px 22px 21px
+        width: 174px
+        &::placeholder
+          color: #ff4d4f
+      & > button 
+        color: #fff
+        +TTNormsPro-ExtraBold-I
+        font-size: 36px
+        line-height: 43px
+        border-radius: 99px
+        background: #be2b20
+        padding: 12px 24px
+        display: flex
+        justify-content: center
+        transition: all 0.3s ease
+        &:hover
+          background-color: #a71c12
+          transition: all 0.3s ease
+#modal-phone
+  & .modal
+    &__main
+      max-width: 770px
+      &-form
+        & > input 
+          width: 186px
+#modal-success
+  & .modal
+    &__main
+      & button
+        color: #fff
+        +TTNormsPro-ExtraBold-I
+        font-size: 36px
+        line-height: 43px
+        border-radius: 99px
+        background: #be2b20
+        padding: 12px 24px
+        display: flex
+        justify-content: center
+        margin: 0px auto
+        transition: all 0.3s ease
+        &:hover
+          background-color: #a71c12
+          transition: all 0.3s ease
+@media (max-width: 1440px )
+  .modal
+    &__main
+      &-title
+        font-size: 56px
+        line-height: 62px
+@media (max-width: 992px )
+  .modal
+    &__main
+      &-title
+        font-size: 48px
+        line-height: 54px
+@media (max-width: 768px )
+  .modal
+    &__container
+      padding: 0px 20px
+    &__block
+      margin: 20px 0
+      padding: 20px
+      border-width: 2px
+      border-radius: 25px
+    &__close
+      width: 26px
+      height: 26px
+      top: 20px
+      right: 20px
+      & > img
+        display: block
+        width: 100%
+        height: 100%
+    &__bg
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+    &__main
+      position: relative
+      transform: none
+      padding: 0
+      z-index: 1
+      left: initial
+      &-title
+        font-size: 48px
+        line-height: 54px
+      &-form
+        column-gap: 12px
